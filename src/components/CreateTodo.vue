@@ -8,9 +8,9 @@
         <div class='ui form'>
           <div class='field'>
             <label>Title</label>
-              <input v-model="titleText" type='text' ref='title' defaultValue="">
+            <input v-model="titleText" type='text' ref='title' defaultValue="">
           </div>
-          <div class="field">
+          <div class='field'>
             <label>Project</label>
             <input type='text' ref='project' defaultValue="">
           </div>
@@ -45,7 +45,7 @@ export default {
       this.isCreating = false;
     },
     sendForm() {
-      if (this.titleText.length > 0 && this.projecText.length > 0) {
+      if (this.titleText.length > 0 && this.projectText.length > 0) {
         const title = this.titleText;
         const project = this.projectText;
         this.$emit('create-todo', {

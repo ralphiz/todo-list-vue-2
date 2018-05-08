@@ -15,7 +15,7 @@ export default {
     TodoList,
     CreateTodo,
   },
-  metods: {
+  methods: {
     addTodo(title) {
       this.todos.push({
         title,
